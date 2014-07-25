@@ -1,0 +1,30 @@
+----------------------------------
+Usage:
+----------------------------------
+fsniffer [-r filename] [-i interface] [-t time] [-o time_offset] [-N num] [-S secs]
+
+This program sniffs TCP, UDP, and ICMP flows on an interface or a caputre
+and prints the flow information.
+
+
+----------------------------------
+Compile instructions:
+----------------------------------
+make clean
+make all
+
+
+----------------------------------
+NOTES:
+----------------------------------
+For ICMP flows, under the state column, the type number of the most recently seen
+packet is displayed. The assumption is made that ICMP packets that are to and from the 
+same source and destination within the timeout period are apart of the same flow. 
+
+
+----------------------------------
+Web Resources:
+----------------------------------
+http://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html#Example-of-Getopt
+http://www.tcpdump.org/pcap.html
+http://www.cs.ucr.edu/~marios/ethereal-tcpdump.pdf
